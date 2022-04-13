@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+  &__row {
+    display: flex;
+    align-items: center;
+    min-height: 114px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-family: $rubikBold;
+    font-weight: 700;
+    cursor: pointer;
+    span {
+      color: #ec5863;
+    }
+  }
+
+  &__menu {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+
+  &__button {
+    flex: 0 0 252px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    &__menu {
+      padding-right: 0;
+    }
+  }
+}
+@media (max-width: 779.999px) {
+  .header {
+    &__logo {
+    }
+    &__row {
+      min-height: 70px;
+    }
+    &__menu {
+      flex: 0 1 100%;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+}
